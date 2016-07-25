@@ -105,7 +105,8 @@ class sistat
     $this->curl = curl_init();
     $this->url = "http://pxweb.stat.si/pxweb/Dialog/varval.asp?".
       "path=".$getParams["path"].
-      "&ma=".$getParams["ma"];
+      "&ma=".$getParams["ma"].
+      "&lang=2";
     $this->getParams = $getParams;
 
     unset($getParams["ma"]);
@@ -438,6 +439,7 @@ class sistat
         $note[] = $this->toLowercaseAndSpaceToUnderscore(implode("-", $arn->subKeys)).": ".implode(" ", $arn->values);
       }
     }
+    $note[] = "SISTAT-API author: Žiga Šebenik (ziga@sebenik.com)";
 
     $responseArray["version"] = "2.0";
     $responseArray["class"] = "dataset";
@@ -470,9 +472,7 @@ class sistat
     $responseArray["size"] = $valuesSize;
     $responseArray["dimension"] = $dimension;
     $responseArray["value"] = (object)$data;
-    if(!empty($note)) {
-      $responseArray["note"] = $note;
-    }
+    $responseArray["note"] = $note;
 
     $this->response = $responseArray;
   }
