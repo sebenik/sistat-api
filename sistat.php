@@ -7,7 +7,7 @@
  * @author  Žiga Šebenik (ziga@sebenik.com)
  * @license MIT License
  * @version 1.0
- * @link    http://...
+ * @link    https://github.com/sebenik/sistat-api
  */
 
 namespace sebenik;
