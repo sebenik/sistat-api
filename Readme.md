@@ -8,8 +8,11 @@ SISTAT-API po zgledu [Eurostat-a](http://ec.europa.eu/eurostat/web/sdmx-web-serv
 ## Uporaba
 1. Na spletni strani [aplikacije SI-STAT](http://pxweb.stat.si/pxweb/dialog/statfile2.asp) poiščete področje in sklop podatkov, ki jih želite uporabiti.
 2. Sestavite API klic:
-    * __ma__ - parameter, ki ga najdete v spletnem naslovu tabele (obvezen parameter)
+    * __URL__ - [http://sistat.sebenik.com/](http://sistat.sebenik.com/)
+    * __GET parametri:__
+      * __ma__ - parameter, ki ga najdete v spletnem naslovu tabele (obvezen parameter)
     * __path__ - parameter, ki ga najdete v spletnem naslovu tabele (obvezen parameter)
+    * __dimenzija__ - 
 
 ## Primeri
 
