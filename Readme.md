@@ -10,9 +10,9 @@ SISTAT-API po zgledu [Eurostat-a](http://ec.europa.eu/eurostat/web/sdmx-web-serv
 2. Sestavite API klic:
     * __URL__ - [http://sistat.sebenik.com/](http://sistat.sebenik.com/)
     * __GET parametri:__
-      * __ma__ - parameter, ki ga najdete v spletnem naslovu izbranega sklopa podatkov (obvezen parameter)
-      * __path__ - parameter, ki ga najdete v spletnem naslovu izbranega sklopa podatkov (obvezen parameter)
-      * __dimenzija__ - 
+      * __ma__ - parameter, katerega vrednost najdete v spletnem naslovu izbranega sklopa podatkov (obvezen parameter)
+      * __path__ - parameter, katerega vrednost najdete v spletnem naslovu izbranega sklopa podatkov (obvezen parameter)
+      * __dimenzija*__ - parametri s katerimi označimo izbrane dimenzije in vrednosti v tabelah. Ime parametra pišemo z malimi črkami, presledke pa nadomestimo s podčrtajem '_'. Vrednosti posameznega parametra pišemo kakor so prikazani v tabelah na spletni strani. V primru izbire večjega števila vrednosti posamezne dimenzije, le te ločimo z vejico ','. Če želimo izbrati vse vrednosti posamezne dimenzije lahko namesto naševanja vseh, za vrednost dimenzije napišemo '_all_', če želimo izbrati zgolj prvo vrednost dimenzije lahko napišemo '_first_' ali '_last', če želimo izbrati zgolj zadnjo vrednost dimenzije. (Glej primer.)
 
 ## Primeri
 
