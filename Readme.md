@@ -8,3 +8,4 @@
 ## Licenca
 
 ## Avtor
+Žiga Šebenik [ziga@sebenik.com](mailto:ziga@sebenik.com)
