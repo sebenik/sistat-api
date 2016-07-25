@@ -408,22 +408,28 @@ class sistat
 
     $responseArray["version"] = "2.0";
     $responseArray["class"] = "dataset";
-    if($pxTitle = $px->keyword("TITLE")) {
+    if($px->hasKeyword("TITLE")) {
+      $pxTitle = $px->keyword("TITLE");
       $responseArray["title"] = $pxTitle->values[0];
     }
-    if($pxDescription = $px->keyword("DESCRIPTION")) {
+    if($px->hasKeyword("DESCRIPTION")) {
+      $pxDescription = $px->keyword("DESCRIPTION");
       $responseArray["description"] = $pxDescription->values[0];
     }
-    if($pxContents = $px->keyword("CONTENTS")) {
+    if($px->hasKeyword("CONTENTS")) {
+      $pxContents = $px->keyword("CONTENTS");
       $responseArray["contents"] = $pxContents->values[0];
     }
-    if($pxCreated = $px->keyword("CREATION-DATE")) {
+    if($px->hasKeyword("CREATION-DATE")) {
+      $pxCreated = $px->keyword("CREATION-DATE");
       $responseArray["created"] = $pxCreated->values[0];
     }
-    if($pxUpdated = $px->keyword("LAST-UPDATED")) {
+    if($px->hasKeyword("LAST-UPDATED")) {
+      $pxUpdated = $px->keyword("LAST-UPDATED");
       $responseArray["updated"] = $pxUpdated->values[0];
     }
-    if($pxSource = $px->keyword("SOURCE")) {
+    if($px->hasKeyword("SOURCE")) {
+      $pxSource = $px->keyword("SOURCE");
       $responseArray["source"] = $pxSource->values[0];
     }
     $responseArray["href"] = $this->url;
