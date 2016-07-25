@@ -10,9 +10,9 @@ SISTAT-API po zgledu [Eurostat-a](http://ec.europa.eu/eurostat/web/sdmx-web-serv
 2. Sestavite API klic:
     * __URL__ - [http://sistat.sebenik.com/](http://sistat.sebenik.com/)
     * __GET parametri:__
-      * __ma__ - parameter, ki ga najdete v spletnem naslovu tabele (obvezen parameter)
-    * __path__ - parameter, ki ga najdete v spletnem naslovu tabele (obvezen parameter)
-    * __dimenzija__ - 
+      * __ma__ - parameter, ki ga najdete v spletnem naslovu izbranega sklopa podatkov (obvezen parameter)
+      * __path__ - parameter, ki ga najdete v spletnem naslovu izbranega sklopa podatkov (obvezen parameter)
+      * __dimenzija__ - 
 
 ## Primeri
 
