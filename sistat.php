@@ -1,13 +1,15 @@
 <?php
-
 /**
+ * Short description for class
  *
- * SI-STAT JSON-STAT API
+ * Long description for class (if any)...
  *
- * @author  Žiga Šebenik (ziga@sebenik.com)
- * @license MIT License
- * @version 1.0
- * @link    https://github.com/sebenik/sistat-api
+ * @category   API
+ * @author     Žiga Šebenik (ziga@sebenik.com)
+ * @copyright  Copyright (c) 2016 Žiga Šebenik (ziga@sebenik.com)
+ * @license    https://github.com/sebenik/sistat-api/blob/master/LICENSE MIT License 
+ * @version    1.0 
+ * @link       https://github.com/sebenik/sistat-api
  */
 
 namespace sebenik;
@@ -80,7 +82,6 @@ class sistat
   /**
    * Constructor
    *
-   * @param $curl curl object
    * @param array $requestFields  
    *
    * @throws \RuntimeException when cURL extension is not installed/enabled
@@ -117,6 +118,9 @@ class sistat
     $this->makeApiCall();
   }
 
+  /**
+   * Makes calls to other private fucntions
+   */
   public function makeApiCall() {
     $this->createHttpHeaders();
     $this->fetchPageHTML();
@@ -134,6 +138,8 @@ class sistat
   }
 
   /**
+   * Creates HTTP headers array, seting current url for the
+   * Referer header
    */
   private function createHttpHeaders() {
     $this->httpHeaders = array(
@@ -149,7 +155,9 @@ class sistat
     );
   }
 
-  /*
+  /**
+   * Fetches HTML of a webpage app for current API call
+   *
    * @throws \RuntimeException when page HTML can't be fetched
    */
   private function fetchPageHTML() {
@@ -178,6 +186,10 @@ class sistat
     }
   }
 
+  /**
+   * Get and save all field names available on a webpage app for
+   * current API call
+   */
   private function getFieldNames() {
     $doc = new DomDocument;
     $doc->loadHTML($this->pageHTML);
@@ -193,6 +205,10 @@ class sistat
     }
   }
 
+  /**
+   * Count number of options for each field name on a webpage app
+   * for current API call
+   */
   private function countFieldOptions() {
     $doc = new DomDocument;
     $doc->loadHTML($this->pageHTML);
@@ -203,6 +219,10 @@ class sistat
     }
   }
 
+  /**
+   * Get and save all field option values for each field name on a
+   * webpage app for current API call
+   */
   private function getFieldOptions() {
     $doc = new DomDocument;
     $doc->loadHTML($this->pageHTML);
@@ -227,6 +247,12 @@ class sistat
     }
   }
 
+  /**
+   * Get and save other reuqired API call data from the webpage app
+   * for current API call
+   *
+   * @throws \RuntimeException if 'elim' element is not found
+   */
   private function getSiteSpecificPostData() {
     $doc = new DomDocument;
     $doc->loadHTML($this->pageHTML);
@@ -243,15 +269,18 @@ class sistat
     }
   }
 
+  /**
+   * Build post data string for the current API call
+   */
   private function buildPostDataArray() {
     $query = array(
-      "pxkonv" => "px",
-      "matrix" => $this->getParams["ma"],
-      "root" => $this->getParams["path"],
+      "pxkonv"   => "px",
+      "matrix"   => $this->getParams["ma"],
+      "root"     => $this->getParams["path"],
       "classdir" => $this->getParams["path"],
-      "noofvar" => count($this->fieldNames),
-      "elim" => $this->siteSpecificPostData["elim"],
-      "lang" => 2,
+      "noofvar"  => count($this->fieldNames),
+      "elim"     => $this->siteSpecificPostData["elim"],
+      "lang"     => 2,
     );
     $this->postData = http_build_query($query);
 
@@ -271,6 +300,8 @@ class sistat
   }
 
   /*
+   * Download and save PC-Axis file for current API call
+   *
    * @throws \RuntimeException when response code != 200 or response != PC-axis file
    */
   public function getPxFile() {
@@ -313,7 +344,9 @@ class sistat
   }
 
   /*
-   * metion JSON-stat: https://json-stat.org/
+   * Parse PC-Axis file and save it in such an array structure that corresponds with
+   * JSON-STAT format (https://json-stat.org/) when converting this array to JSON
+   * with json_encode() function.
    */
   private function parsePxFile() {
     $px = new PX($this->tmpPxFilePath);
@@ -462,7 +495,7 @@ class sistat
    *
    * @param string $str
    *
-   * @return param $str
+   * @return string
    * @return null (if $str matches any value in dotsArray)
    */
   private function dotsToNull($str) {
@@ -470,6 +503,17 @@ class sistat
     return in_array($str, $dotsArray) ? null : $str;
   }
 
+  /**
+   * Find if exists a note in $pxValuenotex array where first subkey
+   * equals $variable and second subkey equals label. If so, return
+   * its value and unset this key from $pxValuenotex array.
+   *
+   * @param string $variable
+   * @param string $label
+   * @param array $pxValuenotex
+   *
+   * @return string | false
+   */
   private function findValuenotex($variable, $label, &$pxValuenotex) {
     $valuenotex = "";
     foreach($pxValuenotex as $vnxKey => $vnxValue) {
@@ -485,6 +529,16 @@ class sistat
     return empty($valuenotex) ? false : $valuenotex;
   }
 
+  /**
+   * Find if exists a note in $pxNotex array where first subkey
+   * equals $variable. If so, return its value and unset this key
+   * from $pxNotex array.
+   *
+   * @param string $variable
+   * @param array $pxNotex
+   *
+   * @return string | false
+   */
   private function findNotex($variable, &$pxNotex) {
     $notex = "";
     foreach($pxNotex as $nxKey => $nxValue) {
