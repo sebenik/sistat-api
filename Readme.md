@@ -54,7 +54,7 @@ Primer za podatke o __[prihodih in prenočitvah turistov po vrstah občin, po sk
 
 
 ## Licenca
-* Podatki: potrebno je navesti vir podatkov, ki jih uporabljate
+* Podatki: potrebno je navesti vir podatkov, ki jih uporabljate (Statistični urad Republike Slovenije)
 * SISTAT-API: [MIT License](https://github.com/sebenik/sistat-api/blob/master/LICENSE)
 
 ## Avtor
