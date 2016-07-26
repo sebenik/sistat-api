@@ -35,6 +35,9 @@ SISTAT-API po zgledu [Eurostat-a](http://ec.europa.eu/eurostat/web/sdmx-web-serv
     * __note__ - polje vsebuje morebitna dodatna pojasnila o prenešenih podatkih ter kontakt. ([ref](https://json-stat.org/format/#note))
 
 ## Primeri
+Primer za podatke o __[Prihodih in prenočitvah turistov po vrstah občin, po skupinah nastanitvenih objektov in po državah, Slovenija, mesečno](http://pxweb.stat.si/pxweb/Dialog/varval.asp?ma=2164407S&ti=&path=../Database/Ekonomsko/21_gostinstvo_turizem/01_21644_nastanitev_mesecno/&lang=2)__
+
+[]()
 
 ## Licenca
     * Podatki: potrebno je navesti vir podatkov, ki jih uporabljate
