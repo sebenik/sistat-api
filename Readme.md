@@ -42,7 +42,7 @@ Primer za podatke o __[prihodih in prenočitvah turistov po vrstah občin, po sk
     * __ma__=2164407S
     * __path__=../Database/Ekonomsko/21_gostinstvo_turizem/01_21644_nastanitev_mesecno/
 2. Ostale GET parametre za poizvedbo kot je prikazana na spodnji sliki zapišemo sledeče:
-![primer izbire parametrov](http://i.imgur.com/BAeu9fn.png)
+![primer izbire parametrov](http://i.imgur.com/3SgIxgv.png)
     * __vrste_občin__=SLOVENIJA
     * __skupine_nastanitvenih_objektov__=all
     * __države__=DRŽAVE - SKUPAJ,DOMAČI,TUJI
