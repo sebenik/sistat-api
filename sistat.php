@@ -441,31 +441,22 @@ class sistat
     }
     $note[] = "SISTAT-API author: Žiga Šebenik (ziga@sebenik.com)";
 
+    $originalAndResponseKeywords = array(
+      "TITLE" => "title",
+      "DESCRIPTION" => "description",
+      "CONTENTS" => "contents",
+      "CREATION-DATE" => "created",
+      "LAST-UPDATED" => "updated",
+      "SOURCE" => "source"
+    );
+
     $responseArray["version"] = "2.0";
     $responseArray["class"] = "dataset";
-    if($px->hasKeyword("TITLE")) {
-      $pxTitle = $px->keyword("TITLE");
-      $responseArray["title"] = $pxTitle->values[0];
-    }
-    if($px->hasKeyword("DESCRIPTION")) {
-      $pxDescription = $px->keyword("DESCRIPTION");
-      $responseArray["description"] = $pxDescription->values[0];
-    }
-    if($px->hasKeyword("CONTENTS")) {
-      $pxContents = $px->keyword("CONTENTS");
-      $responseArray["contents"] = $pxContents->values[0];
-    }
-    if($px->hasKeyword("CREATION-DATE")) {
-      $pxCreated = $px->keyword("CREATION-DATE");
-      $responseArray["created"] = $pxCreated->values[0];
-    }
-    if($px->hasKeyword("LAST-UPDATED")) {
-      $pxUpdated = $px->keyword("LAST-UPDATED");
-      $responseArray["updated"] = $pxUpdated->values[0];
-    }
-    if($px->hasKeyword("SOURCE")) {
-      $pxSource = $px->keyword("SOURCE");
-      $responseArray["source"] = $pxSource->values[0];
+    foreach($originalAndResponseKeywords as $kKey => $kValue) {
+      if($px->hasKeyword($kKey)) {
+        $pxTitle = $px->keyword($kKey);
+        $responseArray[$kValue] = $pxTitle->values[0];
+      }
     }
     $responseArray["href"] = $this->url;
     $responseArray["id"] = array_map(array($this, "toLowercaseAndSpaceToUnderscore"), $variables);
