@@ -1,8 +1,14 @@
 <?php
 /**
- * Short description for class
+ * JSON API podatkovnega portala SI-STAT Staističnega urada Republike Slovenije.
  *
- * Long description for class (if any)...
+ * Spletna aplikacija Statističnega urada Republike Slovenije SI-STAT,
+ * ki je razdeljena po tematskih področjih, omogoča iskanje in prenos
+ * objavljenih statističnih podatkov. Te je mogoče prikazati v tabeli
+ * ali prenesti v obliki različnih datotek (txt, csv, px, xls, htm).
+ * SISTAT-API po zgledu Eurostat-a, omogoča prenos podatkov preko spletne
+ * aplikacije SI-STAT v JSON-STAT formatu. Več o formatu najdete na
+ * tej povezavi: https://json-stat.org.
  *
  * @category   API
  * @author     Žiga Šebenik (ziga@sebenik.com)
