@@ -431,7 +431,7 @@ class sistat
     // append all remaining notes, notex, valuenote, valunetox
     // (those that didn't match with variable & category label names) to root->note array
     $note = array();
-    $allRemainingNotes = array_merge($pxNote, $pxnotex, $pxValuenote, $pxValuenotex);
+    $allRemainingNotes = array_merge($pxNote, $pxNotex, $pxValuenote, $pxValuenotex);
     foreach($allRemainingNotes as $arn) {
       if(empty($arn->subKeys)) {
         $note[] = implode(" ", $arn->values);
