@@ -38,10 +38,18 @@ SISTAT-API po zgledu [Eurostat-a](http://ec.europa.eu/eurostat/web/sdmx-web-serv
 Primer za podatke o __[prihodih in prenočitvah turistov po vrstah občin, po skupinah nastanitvenih objektov in po državah, Slovenija, mesečno](http://pxweb.stat.si/pxweb/Dialog/varval.asp?ma=2164407S&ti=&path=../Database/Ekonomsko/21_gostinstvo_turizem/01_21644_nastanitev_mesecno/&lang=2)__
 
 1. Iz spletnega naslova za izbran sklop podatkov [http://pxweb.stat.si/pxweb/Dialog/varval.asp?ma=2164407S&ti=&path=../Database/Ekonomsko/21_gostinstvo_turizem/01_21644_nastanitev_mesecno/&lang=2](http://pxweb.stat.si/pxweb/Dialog/varval.asp?ma=2164407S&ti=&path=../Database/Ekonomsko/21_gostinstvo_turizem/01_21644_nastanitev_mesecno/&lang=2) prekopiramo GET parametra __ma__ in __path__.
-    * ma=2164407S&ti
+    * ma=2164407S
     * path=../Database/Ekonomsko/21_gostinstvo_turizem/01_21644_nastanitev_mesecno/
 2. Ostale GET parametre za poizvedbo kot je prikazana na spodnji sliki zapišemo sledeče:
 ![primer izbire parametrov](https://i.imgur.com/NEY3vKs.png)
+    * vrste_občin=SLOVENIJA
+    * skupine_nastanitvenih_objektov=all
+    * države=all
+    * mesec=last
+    * meritve=Prenočitve turistov - SKUPAJ
+3. Celoten GET request izgleda tako:
+  [http://sistat.sebenik.com?ma=2164407S&path=../Database/Ekonomsko/21_gostinstvo_turizem/01_21644_nastanitev_mesecno/&vrste_občin=SLOVENIJA&skupine_nastanitvenih_objektov=all&države=all&mesec=all&meritve=Prenočitve turistov - SKUPAJ](http://sistat.sebenik.com?ma=2164407S&path=../Database/Ekonomsko/21_gostinstvo_turizem/01_21644_nastanitev_mesecno/&vrste_občin=SLOVENIJA&skupine_nastanitvenih_objektov=all&države=all&mesec=all&meritve=Prenočitve turistov - SKUPAJ)
+[]()
 
 
 ## Licenca
