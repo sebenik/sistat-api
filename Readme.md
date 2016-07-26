@@ -34,7 +34,7 @@ SISTAT-API po zgledu [Eurostat-a](http://ec.europa.eu/eurostat/web/sdmx-web-serv
     * __value__ - objekt vsebuje podatke glede na izbrane dimenzije. ([ref](https://json-stat.org/format/#value))
     * __note__ - polje vsebuje morebitna dodatna pojasnila o prenešenih podatkih ter kontakt. ([ref](https://json-stat.org/format/#note))
 
-## Primeri
+## Primer
 Primer za podatke o __[prihodih in prenočitvah turistov po vrstah občin, po skupinah nastanitvenih objektov in po državah, Slovenija, mesečno](http://pxweb.stat.si/pxweb/Dialog/varval.asp?ma=2164407S&ti=&path=../Database/Ekonomsko/21_gostinstvo_turizem/01_21644_nastanitev_mesecno/&lang=2)__
 
 1. Iz spletnega naslova za izbran sklop podatkov [http://pxweb.stat.si/pxweb/Dialog/varval.asp?ma=2164407S&ti=&path=../Database/Ekonomsko/21_gostinstvo_turizem/01_21644_nastanitev_mesecno/&lang=2](http://pxweb.stat.si/pxweb/Dialog/varval.asp?ma=2164407S&ti=&path=../Database/Ekonomsko/21_gostinstvo_turizem/01_21644_nastanitev_mesecno/&lang=2) prekopiramo GET parametra __ma__ in __path__.
@@ -49,7 +49,7 @@ Primer za podatke o __[prihodih in prenočitvah turistov po vrstah občin, po sk
     * __meritve__=Prenočitve turistov - SKUPAJ
 3. Celoten GET request izgleda tako:
   [http://sistat.sebenik.com?ma=2164407S&path=../Database/Ekonomsko/21_gostinstvo_turizem/01_21644_nastanitev_mesecno/&vrste_občin=SLOVENIJA&skupine_nastanitvenih_objektov=all&države=DRŽAVE - SKUPAJ,DOMAČI,TUJI&mesec=all&meritve=Prenočitve turistov -
-  SKUPAJ](http%3A%2F%2Fsistat.sebenik.com%3Fma%3D2164407S%26path%3D..%2FDatabase%2FEkonomsko%2F21_gostinstvo_turizem%2F01_21644_nastanitev_mesecno%2F%26vrste_ob%C4%8Din%3DSLOVENIJA%26skupine_nastanitvenih_objektov%3Dall%26dr%C5%BEave%3DDR%C5%BDAVE+-+SKUPAJ%2CDOMA%C4%8CI%2CTUJI%26mesec%3Dall%26meritve%3DPreno%C4%8Ditve+turistov+-+SKUPAJ)
+  SKUPAJ](http://www.jsoneditoronline.org/?url=http%3A%2F%2Fsistat.sebenik.com%2F%3Fma%3D2164407S%26path%3D..%2FDatabase%2FEkonomsko%2F21_gostinstvo_turizem%2F01_21644_nastanitev_mesecno%2F%26vrste_ob%25C4%258Din%3DSLOVENIJA%26skupine_nastanitvenih_objektov%3Dall%26dr%25C5%25BEave%3DDR%25C5%25BDAVE%2520-%2520SKUPAJ%2CDOMA%25C4%258CI%2CTUJI%26mesec%3Dall%26meritve%3DPreno%25C4%258Ditve%2520turistov%2520-%2520SKUPAJ)
 
 
 ## Licenca
