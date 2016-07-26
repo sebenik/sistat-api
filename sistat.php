@@ -387,15 +387,15 @@ class sistat
       $categoryLabel = array();
       $categoryNote = array();
       for($i = 0; $i < $cV; $i++) {
-        $categoryIndex["i-".$c[$i]] = $i;
-        $categoryLabel["i-".$c[$i]] = $v[$i];
+        $categoryIndex["i_".$c[$i]] = $i;
+        $categoryLabel["i_".$c[$i]] = $v[$i];
         // if exist 'valuenote' or 'valunotex' with variable & category label name, construct array of category valuenotes
         // (categorNote[index] = [valunotes])
         if($pxVnx = $this->findValuenotex($var, $v[$i], $pxValuenote)) {
-          $categoryNote["i-".$c[$i]][] = $pxVnx;
+          $categoryNote["i_".$c[$i]][] = $pxVnx;
         }
         if($pxVnx = $this->findValuenotex($var, $v[$i], $pxValuenotex)) {
-          $categoryNote["i-".$c[$i]][] = $pxVnx;
+          $categoryNote["i_".$c[$i]][] = $pxVnx;
         }
       }
 
