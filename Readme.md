@@ -13,7 +13,7 @@ SISTAT-API po zgledu [Eurostat-a](http://ec.europa.eu/eurostat/web/sdmx-web-serv
       * __ma__ - parameter, katerega vrednost najdete v spletnem naslovu izbranega sklopa podatkov (obvezen parameter)
       * __path__ - parameter, katerega vrednost najdete v spletnem naslovu izbranega sklopa podatkov (obvezen parameter)
       * __dimenzija*__ - parametri s katerimi označimo izbrane dimenzije in vrednosti v tabelah. Ime parametra pišemo z malimi črkami, presledke pa nadomestimo s podčrtajem '\_'. Vrednosti posameznega parametra pišemo kakor so prikazane v tabelah na spletni strani. V primru izbire večjega števila vrednosti posamezne dimenzije, le te ločimo z vejico ','. Če želimo izbrati vse vrednosti posamezne dimenzije lahko namesto naševanja vseh, za vrednost dimenzije napišemo _'all'_, če želimo izbrati zgolj prvo vrednost dimenzije lahko napišemo _'first'_ ali _'last'_, če želimo izbrati zgolj zadnjo vrednost dimenzije. (Glej primer.)
-      Dimenzije, ki so v spletni aplikaciji označena z zvezdico, so obvezna.
+      Dimenzije, ki so v spletni aplikaciji označene z zvezdico, so obvezna.
 3. Struktura odgovora je v [JSON-STAT](https://json-stat.org) formatu. Vsebuje naslednja polja:
     * __version__ - označuje vezijo JSON-STAT formata ([ref](https://json-stat.org/format/#version))
     * __class__ - označuje razred odgovora. Odgovor SISTAT-API-ja je vedno razreda 'dataset'. ([ref](https://json-stat.org/format/#class))
@@ -54,8 +54,8 @@ Primer za podatke o __[prihodih in prenočitvah turistov po vrstah občin, po sk
 
 
 ## Licenca
-    * Podatki: potrebno je navesti vir podatkov, ki jih uporabljate
-    * SISTAT-API: [MIT License](https://github.com/sebenik/sistat-api/blob/master/LICENSE)
+* Podatki: potrebno je navesti vir podatkov, ki jih uporabljate
+* SISTAT-API: [MIT License](https://github.com/sebenik/sistat-api/blob/master/LICENSE)
 
 ## Avtor
 Žiga Šebenik [ziga@sebenik.com](mailto:ziga@sebenik.com)
