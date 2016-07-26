@@ -23,20 +23,22 @@ SISTAT-API po zgledu [Eurostat-a](http://ec.europa.eu/eurostat/web/sdmx-web-serv
     * __updated__ - označuje čas posodobitve podatkov 'leto/mesec/dan ura'.
     * __source__ - vir podatkov.
     * __href__ - spletni naslov do spletne aplikacije za konkretni sklop prenešenih podatkov.
-    * __id__ - polje vsebuje izbrane dimenzije. ([ref](https://json-stat.org/format/#id))
+    * __id__ - polje vsebuje oznake izbranih dimenzij. ([ref](https://json-stat.org/format/#id))
     * __size__ - polje vsebuje število izbranih vrednosti za posamezno dimenzijo. Zaporedje je enako kot v polju 'id'. ([ref](https://json-stat.org/format/#size))
     * __dimension__ - objekt vsebuje informacije o posamezni izbrani dimenziji. ([ref](https://json-stat.org/format/#dimension))
-        * __label__ - ([ref](https://json-stat.org/format/#label))
-        * __category__ - ([ref](https://json-stat.org/format/#category))
-            * __index__ - ([ref](https://json-stat.org/format/#index))
-            * __label__ - ([ref](https://json-stat.org/format/#label))
-            * __note__ - ([ref](https://json-stat.org/format/#note))
+        * __label__ - ime dimenzije. ([ref](https://json-stat.org/format/#label))
+        * __category__ - objekt opisuje možne vrednosti dimenzije. ([ref](https://json-stat.org/format/#category))
+            * __index__ - objekt vsebuje vrstni red možnih vrednosti dimenzije. ([ref](https://json-stat.org/format/#index))
+            * __label__ - objekt vsebuje imena možnih vrednosti dimenzije. ([ref](https://json-stat.org/format/#label))
+            * __note__ - objekt vsebuje morebitna dodatna pojasnila za posamezno vrednost dimenzije. ([ref](https://json-stat.org/format/#note))
     * __value__ - objekt vsebuje podatke glede na izbrane dimenzije. ([ref](https://json-stat.org/format/#value))
     * __note__ - polje vsebuje morebitna dodatna pojasnila o prenešenih podatkih ter kontakt. ([ref](https://json-stat.org/format/#note))
 
 ## Primeri
 
 ## Licenca
+    * Podatki: potrebno je navesti vir podatkov, ki jih uporabljate
+    * SISTAT-API: [MIT License](https://github.com/sebenik/sistat-api/blob/master/LICENSE)
 
 ## Avtor
 Žiga Šebenik [ziga@sebenik.com](mailto:ziga@sebenik.com)
