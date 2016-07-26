@@ -42,7 +42,7 @@ Primer za podatke o __[prihodih in prenočitvah turistov po vrstah občin, po sk
     * __ma__=2164407S
     * __path__=../Database/Ekonomsko/21_gostinstvo_turizem/01_21644_nastanitev_mesecno/
 2. Ostale GET parametre za poizvedbo kot je prikazana na spodnji sliki zapišemo sledeče:
-![primer izbire parametrov](https://i.imgur.com/cxOIVdJ.png)
+![primer izbire parametrov](http://i.imgur.com/BAeu9fn.png)
     * __vrste_občin__=SLOVENIJA
     * __skupine_nastanitvenih_objektov__=all
     * __države__=DRŽAVE - SKUPAJ,DOMAČI,TUJI
@@ -54,7 +54,7 @@ Primer za podatke o __[prihodih in prenočitvah turistov po vrstah občin, po sk
 
 
 ## Licenca
-* Podatki: potrebno je navesti vir podatkov, ki jih uporabljate (Statistični urad Republike Slovenije)
+* Podatki: potrebno je navesti vir podatkov, ki jih uporabljate
 * SISTAT-API: [MIT License](https://github.com/sebenik/sistat-api/blob/master/LICENSE)
 
 ## Avtor
