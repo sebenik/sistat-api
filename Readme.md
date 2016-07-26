@@ -38,15 +38,15 @@ SISTAT-API po zgledu [Eurostat-a](http://ec.europa.eu/eurostat/web/sdmx-web-serv
 Primer za podatke o __[prihodih in prenočitvah turistov po vrstah občin, po skupinah nastanitvenih objektov in po državah, Slovenija, mesečno](http://pxweb.stat.si/pxweb/Dialog/varval.asp?ma=2164407S&ti=&path=../Database/Ekonomsko/21_gostinstvo_turizem/01_21644_nastanitev_mesecno/&lang=2)__
 
 1. Iz spletnega naslova za izbran sklop podatkov [http://pxweb.stat.si/pxweb/Dialog/varval.asp?ma=2164407S&ti=&path=../Database/Ekonomsko/21_gostinstvo_turizem/01_21644_nastanitev_mesecno/&lang=2](http://pxweb.stat.si/pxweb/Dialog/varval.asp?ma=2164407S&ti=&path=../Database/Ekonomsko/21_gostinstvo_turizem/01_21644_nastanitev_mesecno/&lang=2) prekopiramo GET parametra __ma__ in __path__.
-    * ma=2164407S
-    * path=../Database/Ekonomsko/21_gostinstvo_turizem/01_21644_nastanitev_mesecno/
+    * __ma__=2164407S
+    * __path__=../Database/Ekonomsko/21_gostinstvo_turizem/01_21644_nastanitev_mesecno/
 2. Ostale GET parametre za poizvedbo kot je prikazana na spodnji sliki zapišemo sledeče:
 ![primer izbire parametrov](https://i.imgur.com/NEY3vKs.png)
-    * vrste_občin=SLOVENIJA
-    * skupine_nastanitvenih_objektov=all
-    * države=all
-    * mesec=last
-    * meritve=Prenočitve turistov - SKUPAJ
+    * __vrste_občin__=SLOVENIJA
+    * __skupine_nastanitvenih_objektov__=all
+    * __države__=all
+    * __mesec__=last
+    * __meritve__=Prenočitve turistov - SKUPAJ
 3. Celoten GET request izgleda tako:
   [http://sistat.sebenik.com?ma=2164407S&path=../Database/Ekonomsko/21_gostinstvo_turizem/01_21644_nastanitev_mesecno/&vrste_občin=SLOVENIJA&skupine_nastanitvenih_objektov=all&države=all&mesec=all&meritve=Prenočitve turistov -
   SKUPAJ](http://www.jsoneditoronline.org/?url=http%3A%2F%2Fsistat.sebenik.com%2F%3Fma%3D2164407S%26path%3D..%2FDatabase%2FEkonomsko%2F21_gostinstvo_turizem%2F01_21644_nastanitev_mesecno%2F%26vrste_ob%25C4%258Din%3DSLOVENIJA%26skupine_nastanitvenih_objektov%3Dall%26dr%25C5%25BEave%3Dall%26mesec%3Dall%26meritve%3DPreno%25C4%258Ditve%2520turistov%2520-%2520SKUPAJ)
