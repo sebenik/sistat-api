@@ -41,15 +41,15 @@ Primer za podatke o __[prihodih in prenočitvah turistov po vrstah občin, po sk
     * __ma__=2164407S
     * __path__=../Database/Ekonomsko/21_gostinstvo_turizem/01_21644_nastanitev_mesecno/
 2. Ostale GET parametre za poizvedbo kot je prikazana na spodnji sliki zapišemo sledeče:
-![primer izbire parametrov](https://i.imgur.com/NEY3vKs.png)
+![primer izbire parametrov](https://i.imgur.com/cxOIVdJ.png)
     * __vrste_občin__=SLOVENIJA
     * __skupine_nastanitvenih_objektov__=all
-    * __države__=all
+    * __države__=DRŽAVE - SKUPAJ,DOMAČI,TUJI
     * __mesec__=last
     * __meritve__=Prenočitve turistov - SKUPAJ
 3. Celoten GET request izgleda tako:
-  [http://sistat.sebenik.com?ma=2164407S&path=../Database/Ekonomsko/21_gostinstvo_turizem/01_21644_nastanitev_mesecno/&vrste_občin=SLOVENIJA&skupine_nastanitvenih_objektov=all&države=all&mesec=all&meritve=Prenočitve turistov -
-  SKUPAJ](http://www.jsoneditoronline.org/?url=http%3A%2F%2Fsistat.sebenik.com%2F%3Fma%3D2164407S%26path%3D..%2FDatabase%2FEkonomsko%2F21_gostinstvo_turizem%2F01_21644_nastanitev_mesecno%2F%26vrste_ob%25C4%258Din%3DSLOVENIJA%26skupine_nastanitvenih_objektov%3Dall%26dr%25C5%25BEave%3Dall%26mesec%3Dall%26meritve%3DPreno%25C4%258Ditve%2520turistov%2520-%2520SKUPAJ)
+  [http://sistat.sebenik.com?ma=2164407S&path=../Database/Ekonomsko/21_gostinstvo_turizem/01_21644_nastanitev_mesecno/&vrste_občin=SLOVENIJA&skupine_nastanitvenih_objektov=all&države=DRŽAVE - SKUPAJ,DOMAČI,TUJI&mesec=all&meritve=Prenočitve turistov -
+  SKUPAJ]()
 
 
 ## Licenca
