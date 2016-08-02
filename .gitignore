@@ -4,6 +4,8 @@ vendor/
 
 ### Files ###
 tmux-client*
+composer*
+index.php
 
 ### Vim ###
 [._]*.s[a-w][a-z]
