@@ -50,7 +50,7 @@ Primer za podatke o __[prihodih in prenočitvah turistov po vrstah občin, po sk
     * __meritve__=Prenočitve turistov - SKUPAJ
 3. Celoten GET request izgleda tako:
   [http://sistat.sebenik.com?ma=2164407S&path=../Database/Ekonomsko/21_gostinstvo_turizem/01_21644_nastanitev_mesecno/&vrste_občin=SLOVENIJA&skupine_nastanitvenih_objektov=all&države=DRŽAVE - SKUPAJ,DOMAČI,TUJI&mesec=last&meritve=Prenočitve turistov -
-  SKUPAJ](http://www.jsoneditoronline.org/?url=http%3A%2F%2Fsistat.sebenik.com%2F%3Fma%3D2164407S%26path%3D..%2FDatabase%2FEkonomsko%2F21_gostinstvo_turizem%2F01_21644_nastanitev_mesecno%2F%26vrste_ob%25C4%258Din%3DSLOVENIJA%26skupine_nastanitvenih_objektov%3Dall%26dr%25C5%25BEave%3DDR%25C5%25BDAVE%2520-%2520SKUPAJ%2CDOMA%25C4%258CI%2CTUJI%26mesec%3Dlast%26meritve%3DPreno%25C4%258Ditve%2520turistov%2520-%2520SKUPAJ)
+  SKUPAJ](http://sistat.sebenik.com?ma=2164407S&path=../Database/Ekonomsko/21_gostinstvo_turizem/01_21644_nastanitev_mesecno/&vrste_občin=SLOVENIJA&skupine_nastanitvenih_objektov=all&države=DRŽAVE - SKUPAJ,DOMAČI,TUJI&mesec=last&meritve=Prenočitve turistov - SKUPAJ)
 
 
 ## Licenca
