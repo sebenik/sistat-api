@@ -49,8 +49,7 @@ Primer za podatke o __[prihodih in prenočitvah turistov po vrstah občin, po sk
     * __mesec__=last
     * __meritve__=Prenočitve turistov - SKUPAJ
 3. Celoten GET request izgleda tako:
-  [http://sistat.sebenik.com?ma=2164407S&path=../Database/Ekonomsko/21_gostinstvo_turizem/01_21644_nastanitev_mesecno/&vrste_občin=SLOVENIJA&skupine_nastanitvenih_objektov=all&države=DRŽAVE - SKUPAJ,DOMAČI,TUJI&mesec=last&meritve=Prenočitve turistov -
-  SKUPAJ](http://sistat.sebenik.com?ma=2164407S&path=../Database/Ekonomsko/21_gostinstvo_turizem/01_21644_nastanitev_mesecno/&vrste_občin=SLOVENIJA&skupine_nastanitvenih_objektov=all&države=DRŽAVE - SKUPAJ,DOMAČI,TUJI&mesec=last&meritve=Prenočitve turistov - SKUPAJ)
+  [http://sistat.sebenik.com/?ma=2164407S&path=../Database/Ekonomsko/21_gostinstvo_turizem/01_21644_nastanitev_mesecno/&vrste_ob%C4%8Din=SLOVENIJA&skupine_nastanitvenih_objektov=all&dr%C5%BEave=DR%C5%BDAVE%20-%20SKUPAJ,DOMA%C4%8CI,TUJI&mesec=last&meritve=Preno%C4%8Ditve%20turistov%20-+SKUPAJ](http://sistat.sebenik.com/?ma=2164407S&path=../Database/Ekonomsko/21_gostinstvo_turizem/01_21644_nastanitev_mesecno/&vrste_ob%C4%8Din=SLOVENIJA&skupine_nastanitvenih_objektov=all&dr%C5%BEave=DR%C5%BDAVE%20-%20SKUPAJ,DOMA%C4%8CI,TUJI&mesec=last&meritve=Preno%C4%8Ditve%20turistov%20-+SKUPAJ)
 
 
 ## Licenca
