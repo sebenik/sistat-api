@@ -36,20 +36,19 @@ SISTAT-API po zgledu [Eurostat-a](http://ec.europa.eu/eurostat/web/sdmx-web-serv
     * __note__ - polje vsebuje morebitna dodatna pojasnila o prenešenih podatkih ter kontakt. ([ref](https://json-stat.org/format/#note))
 
 ## Primer
-Primer za podatke o __[prihodih in prenočitvah turistov po vrstah občin, po skupinah nastanitvenih objektov in po državah, Slovenija, mesečno](http://pxweb.stat.si/pxweb/Dialog/varval.asp?ma=2164407S&ti=&path=../Database/Ekonomsko/21_gostinstvo_turizem/01_21644_nastanitev_mesecno/&lang=2)__
+Primer za podatke: __[Sklenitve zakonskih zvez po starostnih skupinah ženina in neveste, statistične regije, Slovenija, letno](https://pxweb.stat.si/pxweb/Dialog/varval.asp?ma=05M2008S&ti=&path=../Database/Dem_soc/05_prebivalstvo/34_Poroke/10_05M20_poroke-RE-OBC/&lang=2)__
 
-1. Iz spletnega naslova za izbran sklop podatkov [http://pxweb.stat.si/pxweb/Dialog/varval.asp?ma=2164407S&ti=&path=../Database/Ekonomsko/21_gostinstvo_turizem/01_21644_nastanitev_mesecno/&lang=2](http://pxweb.stat.si/pxweb/Dialog/varval.asp?ma=2164407S&ti=&path=../Database/Ekonomsko/21_gostinstvo_turizem/01_21644_nastanitev_mesecno/&lang=2) prekopiramo GET parametra __ma__ in __path__.
-    * __ma__=2164407S
-    * __path__=../Database/Ekonomsko/21_gostinstvo_turizem/01_21644_nastanitev_mesecno/
+1. Iz spletnega naslova za izbran sklop podatkov [https://pxweb.stat.si/pxweb/Dialog/varval.asp?ma=05M2008S&ti=&path=../Database/Dem_soc/05_prebivalstvo/34_Poroke/10_05M20_poroke-RE-OBC/&lang=2](https://pxweb.stat.si/pxweb/Dialog/varval.asp?ma=05M2008S&ti=&path=../Database/Dem_soc/05_prebivalstvo/34_Poroke/10_05M20_poroke-RE-OBC/&lang=2) prekopiramo GET parametra __ma__ in __path__.
+    * __ma__=05M2008S
+    * __path__=../Database/Dem_soc/05_prebivalstvo/34_Poroke/10_05M20_poroke-RE-OBC/
 2. Ostale GET parametre za poizvedbo kot je prikazana na spodnji sliki zapišemo sledeče:
 ![primer izbire parametrov](http://i.imgur.com/3SgIxgv.png)
-    * __vrste_občin__=SLOVENIJA
-    * __skupine_nastanitvenih_objektov__=all
-    * __države__=DRŽAVE - SKUPAJ,DOMAČI,TUJI
-    * __mesec__=last
-    * __meritve__=Prenočitve turistov - SKUPAJ
+    * __meritve__=all
+    * __statistična_regija__=all
+    * __leto__=last
+    * __starost__=20-24 let,25-29 let,30-34 let
 3. Celoten GET request izgleda tako:
-  [http://sistat.sebenik.com/?ma=2164407S&path=../Database/Ekonomsko/21_gostinstvo_turizem/01_21644_nastanitev_mesecno/&vrste_ob%C4%8Din=SLOVENIJA&skupine_nastanitvenih_objektov=all&dr%C5%BEave=DR%C5%BDAVE%20-%20SKUPAJ,DOMA%C4%8CI,TUJI&mesec=last&meritve=Preno%C4%8Ditve%20turistov%20-+SKUPAJ](http://sistat.sebenik.com/?ma=2164407S&path=../Database/Ekonomsko/21_gostinstvo_turizem/01_21644_nastanitev_mesecno/&vrste_ob%C4%8Din=SLOVENIJA&skupine_nastanitvenih_objektov=all&dr%C5%BEave=DR%C5%BDAVE%20-%20SKUPAJ,DOMA%C4%8CI,TUJI&mesec=last&meritve=Preno%C4%8Ditve%20turistov%20-+SKUPAJ)
+  [http://sistat.sebenik.com/?ma=05M2008S&path=../Database/Dem_soc/05_prebivalstvo/34_Poroke/10_05M20_poroke-RE-OBC&meritve=all&statisti%C4%8Dna_regija=all&leto=last&starost=20-24%20let,25-29%20let,30-34%20let](http://sistat.sebenik.com/?ma=05M2008S&path=../Database/Dem_soc/05_prebivalstvo/34_Poroke/10_05M20_poroke-RE-OBC&meritve=all&statisti%C4%8Dna_regija=all&leto=last&starost=20-24%20let,25-29%20let,30-34%20let)
 
 
 ## Licenca
