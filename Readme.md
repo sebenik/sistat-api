@@ -42,7 +42,7 @@ Primer za podatke: __[Sklenitve zakonskih zvez po starostnih skupinah ženina in
     * __ma__=05M2008S
     * __path__=../Database/Dem_soc/05_prebivalstvo/34_Poroke/10_05M20_poroke-RE-OBC/
 2. Ostale GET parametre za poizvedbo kot je prikazana na spodnji sliki zapišemo sledeče:
-![primer izbire parametrov](http://i.imgur.com/3SgIxgv.png)
+![primer izbire parametrov](http://i.imgur.com/nIDFSSk.png)
     * __meritve__=all
     * __statistična_regija__=all
     * __leto__=last
