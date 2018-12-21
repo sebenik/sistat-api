@@ -312,7 +312,7 @@ class sistat
    * @throws \RuntimeException when response code != 200 or response != PC-axis file
    */
   public function getPxFile() {
-    curl_setopt($this->curl, CURLOPT_URL, "http://pxweb.stat.si/pxweb/Dialog/Saveshow.asp");
+    curl_setopt($this->curl, CURLOPT_URL, "https://pxweb.stat.si/pxweb/Dialog/Saveshow.asp");
     curl_setopt($this->curl, CURLOPT_ENCODING , "");
     curl_setopt($this->curl, CURLOPT_FAILONERROR, true);
     curl_setopt($this->curl, CURLOPT_POST, true);
